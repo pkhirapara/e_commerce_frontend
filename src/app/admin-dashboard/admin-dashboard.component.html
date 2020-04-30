@@ -1,0 +1,123 @@
+<app-navbar></app-navbar>
+<div class="container text-center" style="font-family: Arial, Helvetica, sans-serif;">
+  <h1> Welcome to Admin </h1>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-4">
+      <button class="btn btn-dark form-control" (click)="AddNewProduct()">Add Product</button>
+    </div>
+    <div class="col-sm-4">
+      <button class="btn btn-dark form-control" (click)="AddNewCategory()">Add New Categories</button>
+    </div>
+    <div class="col-sm-4">
+      <button class="btn btn-dark form-control" (click)="AddNewUser()">Add New user</button>
+    </div>
+  </div>
+<div class="card" style="margin-top: 20px;" *ngIf="catergory || product && user">
+  <form >
+    <h1>catogries </h1>
+    <div class="row">
+      <div class="col-sm-6">
+        <input type="text" name="catergory" id="Category" class="form-control" placeholder="catogries list">
+      </div>
+
+      <div class="col-sm-6">
+        <input type="text" name="catergory" id="Category" class="form-control" placeholder="catogries list">
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <input type="text" name="catergory" id="Category" class="form-control" placeholder="catogries list">
+      </div>
+
+      <div class="col-sm-6">
+        <input type="text" name="catergory" id="Category" class="form-control" placeholder="catogries list">
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <input type="text" name="catergory" id="Category" class="form-control" placeholder="catogries list">
+      </div>
+
+      <div class="col-sm-6">
+        <input type="text" name="catergory" id="Category" class="form-control" placeholder="catogries list">
+      </div>
+
+    </div>
+  </form>
+</div>
+
+<div class="card" style="margin-top: 20px;" *ngIf="product || catergory && user" >
+  <form >
+    <h1>product</h1>
+    <div class="row">
+      <div class="col-sm-6">
+        <input type="text" name="catergory" id="Category" class="form-control" placeholder="catogries list">
+      </div>
+
+      <div class="col-sm-6">
+        <input type="text" name="catergory" id="Category" class="form-control" placeholder="catogries list">
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <input type="text" name="catergory" id="Category" class="form-control" placeholder="catogries list">
+      </div>
+
+      <div class="col-sm-6">
+        <input type="text" name="catergory" id="Category" class="form-control" placeholder="catogries list">
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <input type="text" name="catergory" id="Category" class="form-control" placeholder="catogries list">
+      </div>
+
+      <div class="col-sm-6">
+        <input type="text" name="catergory" id="Category" class="form-control" placeholder="catogries list">
+      </div>
+
+    </div>
+  </form>
+</div>
+<div class="card" style="margin-top: 20px;" *ngIf="user">
+  <form >
+    <h1> user</h1>
+    <div class="row">
+      <div class="col-sm-6">
+        <input type="text" name="catergory" id="Category" class="form-control" placeholder="catogries list">
+      </div>
+
+      <div class="col-sm-6">
+        <input type="text" name="catergory" id="Category" class="form-control" placeholder="catogries list">
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <input type="text" name="catergory" id="Category" class="form-control" placeholder="catogries list">
+      </div>
+
+      <div class="col-sm-6">
+        <input type="text" name="catergory" id="Category" class="form-control" placeholder="catogries list">
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <input type="text" name="catergory" id="Category" class="form-control" placeholder="catogries list">
+      </div>
+
+      <div class="col-sm-6">
+        <input type="text" name="catergory" id="Category" class="form-control" placeholder="catogries list">
+      </div>
+
+    </div>
+  </form>
+</div>
+</div>

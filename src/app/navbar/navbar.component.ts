@@ -40,7 +40,7 @@ export class NavbarComponent implements OnInit {
       mobile: this.mobile,
       password: this.password,
     };
-    this.service.registerData(this.obj).subscribe((data) => {
+    this.service.register(this.obj).subscribe((data) => {
       console.log(data);
       alert(data["message"]);
     });

@@ -13,4 +13,7 @@ export class CommonService {
   register(obj: any) {
     return this.httpClient.post(appSetting.REGISTER, obj);
   }
+  products(obj: any) {
+    return this.httpClient.post(appSetting.ADDPRODUCTS, obj);
+  }
 }

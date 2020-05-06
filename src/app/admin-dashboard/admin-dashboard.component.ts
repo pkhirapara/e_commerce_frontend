@@ -8,6 +8,7 @@ import { CommonService } from "../common.service";
   styleUrls: ["./admin-dashboard.component.css"],
 })
 export class AdminDashboardComponent implements OnInit {
+  category: any;
   productName: any;
   productSize: any;
   productColor: any;
@@ -25,7 +26,13 @@ export class AdminDashboardComponent implements OnInit {
     this.user = false;
   }
   AddNewProduct() {
+    this.catergory = false;
+    this.product = true;
+    this.user = false;
+  }
+  AddProduct() {
     this.obj = {
+      category: this.category,
       productName: this.productName,
       productSize: this.productSize,
       productColor: this.productColor,
